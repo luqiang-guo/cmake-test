@@ -1,4 +1,3 @@
-# find_package(Threads REQUIRED)
 include(FetchContent) 
 set(FETCHCONTENT_QUIET off)
 
@@ -11,8 +10,8 @@ FetchContent_Declare(	tbbbb	#库名字
 set(TBB_EXAMPLES OFF CACHE BOOL "")
 set(TBB_TEST OFF CACHE BOOL "")
 # set(BUILD_SHARED_LIBS OFF CACHE BOOL "")
-FetchContent_GetProperties(tbbbb)
 # set(CMAKE_POLICY_DEFAULT_CMP0079 NEW)
+FetchContent_GetProperties(tbbbb)
 
 if(NOT tbbbb)
   FetchContent_Populate(tbbbb)
